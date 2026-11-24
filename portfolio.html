@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dashrath Singh | Portfolio</title>
+
+  <!-- GOOGLE FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#050816;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* BACKGROUND EFFECT */
+
+    body::before{
+      content:'';
+      position:fixed;
+      width:500px;
+      height:500px;
+      background:#2563eb;
+      filter:blur(200px);
+      top:-200px;
+      right:-150px;
+      opacity:0.4;
+      z-index:-1;
+    }
+
+    body::after{
+      content:'';
+      position:fixed;
+      width:400px;
+      height:400px;
+      background:#7c3aed;
+      filter:blur(200px);
+      bottom:-150px;
+      left:-100px;
+      opacity:0.3;
+      z-index:-1;
+    }
+
+    /* NAVBAR */
+
+    header{
+      width:100%;
+      padding:22px 10%;
+      position:fixed;
+      top:0;
+      left:0;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      backdrop-filter:blur(12px);
+      background:rgba(255,255,255,0.03);
+      border-bottom:1px solid rgba(255,255,255,0.08);
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:32px;
+      font-weight:800;
+      background:linear-gradient(to right,#38bdf8,#8b5cf6);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:30px;
+      font-weight:500;
+      transition:0.3s;
+      position:relative;
+    }
+
+    nav a::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-5px;
+      width:0%;
+      height:2px;
+      background:#38bdf8;
+      transition:0.3s;
+    }
+
+    nav a:hover::after{
+      width:100%;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    section{
+      padding:120px 10%;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:60px;
+    }
+
+    .hero-text{
+      flex:1;
+    }
+
+    .hero-text h3{
+      font-size:25px;
+      color:#38bdf8;
+      margin-bottom:15px;
+    }
+
+    .hero-text h1{
+      font-size:75px;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .hero-text h1 span{
+      background:linear-gradient(to right,#38bdf8,#8b5cf6);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero-text p{
+      color:#cbd5e1;
+      line-height:1.9;
+      max-width:650px;
+      margin-bottom:35px;
+      font-size:17px;
+    }
+
+    .btn-download{
+      display:inline-block;
+      background:transparent;
+      border:1.5px solid #38bdf8;
+      color:#38bdf8;
+      padding:10px 24px;
+      border-radius:9999px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:15px;
+      transition:0.3s;
+    }
+
+    .btn-download:hover{
+      background:#38bdf8;
+      color:#060913;
+      box-shadow:0 0 20px rgba(56,189,248,0.4);
+    }
+
+    /* PROFILE IMAGE */
+
+    .hero-img{
+      flex:1;
+      display:flex;
+      justify-content:center;
+    }
+
+    .profile-border{
+      padding:8px;
+      border-radius:35px;
+      background:linear-gradient(135deg,#38bdf8,#8b5cf6,#ec4899);
+      box-shadow:
+      0 0 30px rgba(56,189,248,0.4),
+      0 0 60px rgba(139,92,246,0.3);
+      animation: glow 4s linear infinite;
+    }
+
+    .hero-img img{
+      width:360px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius:28px;
+      display:block;
+    }
+
+    @keyframes glow{
+      0%{
+        filter:hue-rotate(0deg);
+      }
+      100%{
+        filter:hue-rotate(360deg);
+      }
+    }
+
+    /* TITLES */
+
+    .section-title{
+      text-align:center;
+      font-size:48px;
+      margin-bottom:70px;
+      font-weight:700;
+    }
+
+    .section-title span{
+      color:#38bdf8;
+    }
+
+    /* GLASS EFFECT */
+
+    .glass-card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      backdrop-filter:blur(10px);
+      border-radius:24px;
+      transition:0.4s;
+    }
+
+    .glass-card:hover{
+      transform:translateY(-10px);
+      border-color:#38bdf8;
+      box-shadow:0 10px 40px rgba(56,189,248,0.15);
+    }
+
+    /* ABOUT */
+
+    .about-box{
+      padding:45px;
+      text-align:center;
+      line-height:2;
+      color:#cbd5e1;
+      font-size:17px;
+    }
+
+    /* EDUCATION */
+
+    .education-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .edu-card{
+      padding:35px;
+    }
+
+    .edu-card h3{
+      font-size:28px;
+      margin-bottom:15px;
+      color:#38bdf8;
+    }
+
+    .edu-card p{
+      line-height:1.9;
+      color:#cbd5e1;
+    }
+
+    /* SKILLS */
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:25px;
+    }
+
+    .skill-card{
+      padding:30px;
+      text-align:center;
+      font-size:20px;
+      font-weight:600;
+    }
+
+    /* PROJECTS */
+
+    .projects-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+      gap:35px;
+    }
+
+    .project-card{
+      overflow:hidden;
+    }
+
+    .project-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .project-content{
+      padding:28px;
+    }
+
+    .project-content h3{
+      font-size:26px;
+      margin-bottom:15px;
+      color:#38bdf8;
+    }
+
+    .project-content p{
+      color:#cbd5e1;
+      line-height:1.8;
+    }
+
+    /* CONTACT */
+
+    .contact-box{
+      padding:50px;
+      text-align:center;
+    }
+
+    .contact-box p{
+      margin:20px 0;
+      color:#cbd5e1;
+      font-size:19px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      padding:25px;
+      text-align:center;
+      border-top:1px solid rgba(255,255,255,0.08);
+      color:#94a3b8;
+    }
+
+    /* MOBILE RESPONSIVE */
+
+    @media(max-width:950px){
+
+      .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:55px;
+      }
+
+      .hero-text p{
+        margin:auto;
+      }
+
+      nav{
+        display:none;
+      }
+
+      .hero-img img{
+        width:280px;
+      }
+
+      .section-title{
+        font-size:38px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header>
+
+    <div class="logo">Dashrath.</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+
+      <h3>Hello, I'm</h3>
+
+      <h1>
+        Dashrath <span>Singh</span>
+      </h1>
+
+      <p>
+        Computer Science Engineering student passionate about
+        Python Development, Data Analysis, Artificial Intelligence,
+        and Problem Solving using DSA.
+      </p>
+
+      <a href="assets/docs/Dashrath_Singh_Resume.pdf" download="Dashrath_Singh_Resume.pdf" target="_blank" class="btn-download">Download CV</a>
+
+    </div>
+
+    <div class="hero-img">
+
+      <div class="profile-border">
+
+        <img src="assets/images/profile.png" alt="Dashrath Singh">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <h2 class="section-title">
+      About <span>Me</span>
+    </h2>
+
+    <div class="glass-card about-box">
+
+      <p>
+        I am a passionate Computer Science Engineering student
+        focused on Python Development, Data Analysis,
+        Artificial Intelligence, and modern technologies.
+        I enjoy building real-world projects and improving
+        my technical and problem-solving skills.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+
+  <section id="education">
+
+    <h2 class="section-title">
+      My <span>Education</span>
+    </h2>
+
+    <div class="education-grid">
+
+      <div class="glass-card edu-card">
+
+        <h3>10th Standard</h3>
+
+        <p>
+          Balaji Bal Niketan School <br>
+          Percentage: 88.50% <br>
+          Year: 2021
+        </p>
+
+      </div>
+
+      <div class="glass-card edu-card">
+
+        <h3>12th Standard</h3>
+
+        <p>
+          Apex Senior Secondary School <br>
+          Science Stream <br>
+          Percentage: 72.80% <br>
+          Year: 2022
+        </p>
+
+      </div>
+
+      <div class="glass-card edu-card">
+
+        <h3>B.Tech (CSE)</h3>
+
+        <p>
+          Parul University <br>
+          Computer Science Engineering <br>
+          2023 - Present
+        </p>
+
+      </div>
+
+      <div class="glass-card edu-card">
+
+        <h3>Diploma in Native Mobile App Development</h3>
+
+        <p>
+          Parul University <br>
+          CGPA: 8.55 / 10 <br>
+          07/2025 – 09/2026
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <h2 class="section-title">
+      My <span>Skills</span>
+    </h2>
+
+    <div class="skills-grid">
+
+      <div class="glass-card skill-card">Python</div>
+      <div class="glass-card skill-card">Django</div>
+      <div class="glass-card skill-card">JavaScript</div>
+      <div class="glass-card skill-card">Data Structures (DSA)</div>
+      <div class="glass-card skill-card">SQL &amp; Databases</div>
+      <div class="glass-card skill-card">REST APIs</div>
+      <div class="glass-card skill-card">HTML5 &amp; CSS3</div>
+      <div class="glass-card skill-card">Flask</div>
+      <div class="glass-card skill-card">Git &amp; GitHub</div>
+      <div class="glass-card skill-card">Pandas &amp; NumPy</div>
+      <div class="glass-card skill-card">Problem Solving</div>
+
+    </div>
+
+  </section>
+
+  <!-- ===== NOTABLE PROJECTS SHOWCASE ===== -->
+  <section id="projects" class="notable-projects-section">
+    <div class="notable-container">
+
+      <!-- Section Title & Fast Jump Nav -->
+      <div class="notable-header-bar">
+        <div class="notable-header-left">
+          <div class="notable-badge-pill">Notable Projects</div>
+          <h2 class="notable-section-heading">Featured Engineering &amp; Analytics Case Studies</h2>
+        </div>
+        <div class="project-quick-nav">
+          <a href="#project-uber" class="quick-nav-pill">01 Uber NYC</a>
+          <a href="#project-sales" class="quick-nav-pill">02 Sales Forecast</a>
+          <a href="#project-chatbot" class="quick-nav-pill">03 NLP Chatbot</a>
+          <a href="#project-ecommerce" class="quick-nav-pill">04 Sweet Ordering</a>
+          <a href="#project-hospital" class="quick-nav-pill">05 Hospital System</a>
+        </div>
+      </div>
+
+      <!-- ALL PROJECTS RENDERED SEQUENTIALLY IN THIS EXACT FORMAT -->
+      <div class="notable-cards-wrapper all-cards-visible">
+
+        <!-- ================= PROJECT 01: UBER PRICING NYC ================= -->
+        <article class="notable-project-card" id="project-uber">
+          <div class="card-top-badge">
+            <div class="notable-badge-pill">Notable Projects</div>
+          </div>
+
+          <div class="project-header-row">
+            <span class="project-huge-num">01</span>
+            <h2 class="project-main-title">UBER PRICING OPTIMIZATION<br>IN NEW YORK CITY</h2>
+          </div>
+
+          <div class="project-visual-frame">
+            <img src="assets/images/uber_showcase_banner.png" alt="Uber Pricing Optimization NYC Dashboard" class="project-visual-img">
+            <div class="visual-hover-overlay">
+              <button class="preview-btn" onclick="openDeckModal('uber')">
+                <i data-lucide="maximize-2" style="width:16px;height:16px;"></i> Expand Visual Deck
+              </button>
+            </div>
+          </div>
+
+          <div class="project-bottom-split">
+            <div class="project-narrative-col">
+              <p class="project-description-text">
+                An end-to-end analysis about <span class="hl-gold">finding out the best pricing model</span> for uber booking in New York City <span class="hl-gold">to increase the revenue</span> by doing <span class="hl-gold">Linear Regression</span> to find out the impact of each variables of uber booking, evaluate the existing pricing model (High Fare and Discounted Fare application), do impact analysis and give recommendation of the best uber booking pricing. This analysis <span class="hl-gold">resulting a better model of Uber Pricing</span> that is proven to <span class="hl-gold">increase 11.5% revenue</span>.
+              </p>
+              <div class="project-spec-lines">
+                <div class="spec-line"><span class="spec-label">Tools :</span> Python (Google Collab), Tableau</div>
+                <div class="spec-line"><span class="spec-label">Analysis :</span> EDA, Linear Regression</div>
+              </div>
+            </div>
+
+            <div class="project-buttons-col">
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDeckModal('uber')">Full Deck</a>
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDashboardModal('uber')">Tableau Dashboard</a>
+              <a href="https://github.com/DASHRATHSINGH0007" target="_blank" class="action-pill-btn">Google Collab Python Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 02: SALES PREDICTION ================= -->
+        <article class="notable-project-card" id="project-sales">
+          <div class="card-top-badge">
+            <div class="notable-badge-pill">Notable Projects</div>
+          </div>
+
+          <div class="project-header-row">
+            <span class="project-huge-num">02</span>
+            <h2 class="project-main-title">SALES PREDICTION &amp; REVENUE<br>FORECASTING ENGINE</h2>
+          </div>
+
+          <div class="project-visual-frame">
+            <img src="assets/images/sales_showcase_banner.svg" alt="Sales Prediction & Revenue Forecasting Engine" class="project-visual-img">
+            <div class="visual-hover-overlay">
+              <button class="preview-btn" onclick="openDeckModal('sales')">
+                <i data-lucide="maximize-2" style="width:16px;height:16px;"></i> Expand Visual Deck
+              </button>
+            </div>
+          </div>
+
+          <div class="project-bottom-split">
+            <div class="project-narrative-col">
+              <p class="project-description-text">
+                An end-to-end forecasting pipeline engineered to <span class="hl-gold">predict future store revenue</span> and detect seasonal demand shifts using <span class="hl-gold">XGBoost &amp; Time-Series Regression</span>. Evaluated promotional impact and price elasticities across retail branches, enabling data-driven inventory management that <span class="hl-gold">boosted forecasting accuracy by 18.3%</span>.
+              </p>
+              <div class="project-spec-lines">
+                <div class="spec-line"><span class="spec-label">Tools :</span> Python, Scikit-learn, XGBoost, Power BI, Pandas</div>
+                <div class="spec-line"><span class="spec-label">Analysis :</span> Time-Series Forecasting, Feature Engineering, Elasticity Modeling</div>
+              </div>
+            </div>
+
+            <div class="project-buttons-col">
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDeckModal('sales')">Full Deck</a>
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDashboardModal('sales')">Power BI Dashboard</a>
+              <a href="https://github.com/DASHRATHSINGH0007" target="_blank" class="action-pill-btn">Jupyter Python Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 03: AI NLP CHATBOT ================= -->
+        <article class="notable-project-card" id="project-chatbot">
+          <div class="card-top-badge">
+            <div class="notable-badge-pill">Notable Projects</div>
+          </div>
+
+          <div class="project-header-row">
+            <span class="project-huge-num">03</span>
+            <h2 class="project-main-title">INTELLIGENT CONVERSATIONAL<br>NLP CHATBOT ASSISTANT</h2>
+          </div>
+
+          <div class="project-visual-frame">
+            <img src="assets/images/chatbot_showcase_banner.svg" alt="Intelligent Conversational NLP Chatbot Assistant" class="project-visual-img">
+            <div class="visual-hover-overlay">
+              <button class="preview-btn" onclick="openDeckModal('chatbot')">
+                <i data-lucide="maximize-2" style="width:16px;height:16px;"></i> Expand Visual Deck
+              </button>
+            </div>
+          </div>
+
+          <div class="project-bottom-split">
+            <div class="project-narrative-col">
+              <p class="project-description-text">
+                An automated conversational engine engineered with <span class="hl-gold">NLP intent recognition</span> and entity extraction algorithms to <span class="hl-gold">resolve customer queries in real-time</span>. Implemented semantic query matching and dialog state management that successfully <span class="hl-gold">automated 70%+ of frequent user inquiries</span> with sub-second response latency.
+              </p>
+              <div class="project-spec-lines">
+                <div class="spec-line"><span class="spec-label">Tools :</span> Python, NLTK, Spacy, Flask REST API, SQLite</div>
+                <div class="spec-line"><span class="spec-label">Analysis :</span> Intent Classification, Sentiment Analysis, Text Tokenization</div>
+              </div>
+            </div>
+
+            <div class="project-buttons-col">
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDeckModal('chatbot')">Full Deck</a>
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDashboardModal('chatbot')">Interactive Chat Demo</a>
+              <a href="https://github.com/DASHRATHSINGH0007" target="_blank" class="action-pill-btn">GitHub Python Source</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 04: FULL-STACK E-COMMERCE ================= -->
+        <article class="notable-project-card" id="project-ecommerce">
+          <div class="card-top-badge">
+            <div class="notable-badge-pill">Notable Projects</div>
+          </div>
+
+          <div class="project-header-row">
+            <span class="project-huge-num">04</span>
+            <h2 class="project-main-title">FULL-STACK SWEET ORDERING &amp;<br>INVENTORY MANAGEMENT SYSTEM</h2>
+          </div>
+
+          <div class="project-visual-frame">
+            <img src="assets/images/ecommerce_showcase_banner.svg" alt="Full-Stack Sweet Ordering &amp; Inventory Management System" class="project-visual-img">
+            <div class="visual-hover-overlay">
+              <button class="preview-btn" onclick="openDeckModal('ecommerce')">
+                <i data-lucide="maximize-2" style="width:16px;height:16px;"></i> Expand Visual Deck
+              </button>
+            </div>
+          </div>
+
+          <div class="project-bottom-split">
+            <div class="project-narrative-col">
+              <p class="project-description-text">
+                An end-to-end confectionery e-commerce platform built with <span class="hl-gold">Django full-stack architecture</span> featuring sweet cataloging, dynamic cart management, and <span class="hl-gold">real-time inventory tracking</span>. Designed intuitive checkout workflows that <span class="hl-gold">cut order processing time by 35%</span> and handled live sweet custom orders seamlessly.
+              </p>
+              <div class="project-spec-lines">
+                <div class="spec-line"><span class="spec-label">Tools :</span> Django, Python, JavaScript, HTML5/CSS3, SQLite</div>
+                <div class="spec-line"><span class="spec-label">Analysis :</span> Full-Stack Architecture, Query Optimization, Checkout UX</div>
+              </div>
+            </div>
+
+            <div class="project-buttons-col">
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDeckModal('ecommerce')">Full Deck</a>
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDashboardModal('ecommerce')">Live Store Demo</a>
+              <a href="https://github.com/DASHRATHSINGH0007" target="_blank" class="action-pill-btn">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 05: HOSPITAL MANAGEMENT SYSTEM ================= -->
+        <article class="notable-project-card" id="project-hospital">
+          <div class="card-top-badge">
+            <div class="notable-badge-pill">Notable Projects</div>
+          </div>
+
+          <div class="project-header-row">
+            <span class="project-huge-num">05</span>
+            <h2 class="project-main-title">HOSPITAL MANAGEMENT &amp;<br>PATIENT RECORDS SYSTEM</h2>
+          </div>
+
+          <div class="project-visual-frame">
+            <img src="assets/images/hospital_showcase_banner.svg" alt="Hospital Management & Patient Records System" class="project-visual-img">
+            <div class="visual-hover-overlay">
+              <button class="preview-btn" onclick="openDeckModal('hospital')">
+                <i data-lucide="maximize-2" style="width:16px;height:16px;"></i> Expand Visual Deck
+              </button>
+            </div>
+          </div>
+
+          <div class="project-bottom-split">
+            <div class="project-narrative-col">
+              <p class="project-description-text">
+                A comprehensive clinical healthcare ERP engineered to <span class="hl-gold">digitize hospital workflows</span>, inpatient admissions, and electronic health records (EHR). Features role-based access control for medical consultants, automated bed allotment tracking, and <span class="hl-gold">integrated billing &amp; pharmacy management</span> that <span class="hl-gold">reduced patient waiting times by 38%</span> and eliminated record redundancy.
+              </p>
+              <div class="project-spec-lines">
+                <div class="spec-line"><span class="spec-label">Tools :</span> Python, Django / Flask, MySQL, HTML5/CSS3, JavaScript</div>
+                <div class="spec-line"><span class="spec-label">Analysis :</span> Database Normalization, Role-Based Access Control (RBAC), Workflow Automation</div>
+              </div>
+            </div>
+
+            <div class="project-buttons-col">
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDeckModal('hospital')">Full Deck</a>
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDashboardModal('hospital')">Hospital Portal Demo</a>
+              <a href="https://github.com/DASHRATHSINGH0007" target="_blank" class="action-pill-btn">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+    <!-- ===== FULL DECK & DASHBOARD PREVIEW MODAL ===== -->
+    <div class="notable-modal" id="notableModal">
+      <div class="notable-modal-overlay" onclick="closeNotableModal()"></div>
+      <div class="notable-modal-dialog">
+        <div class="notable-modal-header">
+          <h3 id="modalTitle">Project Presentation Deck</h3>
+          <button class="modal-close-btn" onclick="closeNotableModal()">&times;</button>
+        </div>
+        <div class="notable-modal-body" id="modalBody">
+          <!-- Dynamic content inserted by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h2 class="section-title">
+      Contact <span>Me</span>
+    </h2>
+
+    <div class="glass-card contact-box">
+
+      <p>Email: dashrathsinghrajpurohit2006@gmail.com</p>
+
+      <p>Phone: +91 9316357059</p>
+
+      <p>LinkedIn: linkedin.com/in/dashrath-singh-499483327</p>
+
+      <p>GitHub: github.com/DASHRATHSINGH0007</p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2026 Dashrath Singh | All Rights Reserved
+
+  </footer>
+
+  <script src="script.js"></script>
+  <script>if (window.lucide) lucide.createIcons();</script>
+</body>
+</html>

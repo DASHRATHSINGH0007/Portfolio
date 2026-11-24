@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 290" width="1024" height="290">
+  <defs>
+    <linearGradient id="chatBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140f2b"/>
+      <stop offset="100%" stop-color="#080715"/>
+    </linearGradient>
+    <linearGradient id="chatAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="290" fill="url(#chatBgGrad)"/>
+  <rect x="0" y="0" width="1024" height="290" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+  <!-- LEFT SPLIT: Product Cover Mockup (Width: 480) -->
+  <g transform="translate(15, 15)">
+    <rect width="470" height="260" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    
+    <!-- Top graphic banner -->
+    <rect x="15" y="15" width="230" height="150" rx="8" fill="url(#chatAccentGrad)"/>
+    
+    <text x="30" y="52" fill="#ffffff" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="18" letter-spacing="0.5">NLP CHATBOT</text>
+    <text x="30" y="74" fill="#ddd6fe" font-family="'Outfit', 'Inter', sans-serif" font-weight="700" font-size="14">AI CONVERSATION AGENT</text>
+    
+    <line x1="30" y1="90" x2="215" y2="90" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    
+    <text x="30" y="112" fill="#e2e8f0" font-family="sans-serif" font-size="10" font-weight="600">Multi-Turn Intent Recognition</text>
+    <text x="30" y="128" fill="#e0e7ff" font-family="sans-serif" font-size="9">Named Entity Recognition &amp; Sentiment</text>
+    <text x="30" y="150" fill="#facc15" font-family="sans-serif" font-size="9" font-weight="700">PORTFOLIO CASE STUDY | DASHRATH SINGH</text>
+
+    <!-- Chat Interface Graphic on Right of Left Split -->
+    <g transform="translate(265, 15)">
+      <rect width="190" height="230" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+      <rect x="8" y="10" width="174" height="210" rx="8" fill="#090d16"/>
+      <!-- Header -->
+      <text x="18" y="28" fill="#a78bfa" font-family="sans-serif" font-size="11" font-weight="bold">AI Agent Active</text>
+      <circle cx="160" cy="24" r="4" fill="#22c55e"/>
+      <!-- Bubbles -->
+      <rect x="15" y="45" width="120" height="30" rx="8" fill="#312e81"/>
+      <text x="25" y="64" fill="#e0e7ff" font-size="9">How can I assist you?</text>
+
+      <rect x="55" y="85" width="115" height="30" rx="8" fill="#4338ca"/>
+      <text x="65" y="104" fill="#ffffff" font-size="9">Check order status #481</text>
+
+      <rect x="15" y="125" width="140" height="36" rx="8" fill="#312e81"/>
+      <text x="25" y="142" fill="#e0e7ff" font-size="9">Order #481 is out for</text>
+      <text x="25" y="154" fill="#4ade80" font-size="9" font-weight="bold">delivery today by 5 PM.</text>
+
+      <rect x="15" y="178" width="154" height="28" rx="4" fill="#7c3aed"/>
+      <text x="35" y="196" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold">Test Live Assistant</text>
+    </g>
+
+    <text x="30" y="200" fill="#94a3b8" font-family="sans-serif" font-size="11">Python, NLTK, Spacy &amp; Flask</text>
+    <text x="30" y="222" fill="#c084fc" font-family="sans-serif" font-size="12" font-weight="bold">Automates 74.5% of Queries</text>
+  </g>
+
+  <!-- VERTICAL DIVIDER -->
+  <line x1="505" y1="15" x2="505" y2="275" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+
+  <!-- RIGHT SPLIT: NLP Live Metrics & Analytics (Width: 500) -->
+  <g transform="translate(520, 15)">
+    <!-- Dashboard Header -->
+    <rect width="489" height="38" rx="6" fill="#111827" stroke="#1f2937" stroke-width="1"/>
+    <circle cx="20" cy="19" r="6" fill="#8b5cf6"/>
+    <text x="35" y="24" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="800" font-size="13">NLP INSIGHTS</text>
+    <text x="135" y="24" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="600">CONVERSATIONAL ENGINE TELEMETRY</text>
+    <rect x="395" y="8" width="80" height="22" rx="4" fill="#6d28d9"/>
+    <text x="405" y="23" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold">LATENCY 120MS</text>
+
+    <!-- 4 KPI CARDS -->
+    <g transform="translate(0, 48)">
+      <rect x="0" y="0" width="116" height="60" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="12" y="18" fill="#94a3b8" font-size="9" font-family="sans-serif">INTENT ACCURACY</text>
+      <text x="12" y="44" fill="#a78bfa" font-size="18" font-weight="800" font-family="sans-serif">96.2%</text>
+      
+      <rect x="124" y="0" width="116" height="60" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="136" y="18" fill="#94a3b8" font-size="9" font-family="sans-serif">AUTO RESOLUTION</text>
+      <text x="136" y="44" fill="#38bdf8" font-size="18" font-weight="800" font-family="sans-serif">74.5%</text>
+
+      <rect x="248" y="0" width="116" height="60" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="260" y="18" fill="#94a3b8" font-size="9" font-family="sans-serif">TOTAL SESSIONS</text>
+      <text x="260" y="44" fill="#facc15" font-size="18" font-weight="800" font-family="sans-serif">34.2K</text>
+
+      <rect x="372" y="0" width="117" height="60" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="384" y="18" fill="#94a3b8" font-size="9" font-family="sans-serif">AVG SENTIMENT</text>
+      <text x="384" y="44" fill="#4ade80" font-size="18" font-weight="800" font-family="sans-serif">+0.84</text>
+    </g>
+
+    <!-- CHARTS AREA (Bottom) -->
+    <g transform="translate(0, 118)">
+      <!-- Left Chart: Intent distribution -->
+      <rect x="0" y="0" width="235" height="142" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="12" y="18" fill="#cbd5e1" font-size="10" font-weight="700" font-family="sans-serif">TOP INTENT CLASSIFICATION</text>
+      
+      <text x="12" y="42" fill="#94a3b8" font-size="9">Order Inquiries</text>
+      <rect x="100" y="32" width="120" height="10" rx="3" fill="#1e293b"/>
+      <rect x="100" y="32" width="105" height="10" rx="3" fill="#a78bfa"/>
+
+      <text x="12" y="66" fill="#94a3b8" font-size="9">Product Specs</text>
+      <rect x="100" y="56" width="120" height="10" rx="3" fill="#1e293b"/>
+      <rect x="100" y="56" width="85" height="10" rx="3" fill="#818cf8"/>
+
+      <text x="12" y="90" fill="#94a3b8" font-size="9">Payment &amp; Refund</text>
+      <rect x="100" y="80" width="120" height="10" rx="3" fill="#1e293b"/>
+      <rect x="100" y="80" width="65" height="10" rx="3" fill="#38bdf8"/>
+
+      <text x="12" y="114" fill="#94a3b8" font-size="9">General Support</text>
+      <rect x="100" y="104" width="120" height="10" rx="3" fill="#1e293b"/>
+      <rect x="100" y="104" width="45" height="10" rx="3" fill="#4ade80"/>
+
+      <!-- Right Chart: Real-time Response Timeline -->
+      <rect x="245" y="0" width="244" height="142" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="257" y="18" fill="#cbd5e1" font-size="10" font-weight="700" font-family="sans-serif">QUERY VOLUME &amp; SPEED</text>
+      <line x1="257" y1="40" x2="475" y2="40" stroke="#1e293b" stroke-width="1"/>
+      <line x1="257" y1="80" x2="475" y2="80" stroke="#1e293b" stroke-width="1"/>
+      <line x1="257" y1="120" x2="475" y2="120" stroke="#1e293b" stroke-width="1"/>
+      <!-- Volume bars -->
+      <rect x="270" y="70" width="14" height="50" rx="2" fill="#4338ca"/>
+      <rect x="295" y="50" width="14" height="70" rx="2" fill="#6366f1"/>
+      <rect x="320" y="40" width="14" height="80" rx="2" fill="#8b5cf6"/>
+      <rect x="345" y="30" width="14" height="90" rx="2" fill="#a78bfa"/>
+      <rect x="370" y="55" width="14" height="65" rx="2" fill="#818cf8"/>
+      <rect x="395" y="45" width="14" height="75" rx="2" fill="#a78bfa"/>
+      <rect x="420" y="35" width="14" height="85" rx="2" fill="#c084fc"/>
+      <rect x="445" y="50" width="14" height="70" rx="2" fill="#6366f1"/>
+      <text x="257" y="134" fill="#a78bfa" font-size="8">Real-time Stream: 120ms Latency</text>
+    </g>
+  </g>
+</svg>

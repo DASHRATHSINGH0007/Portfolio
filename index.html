@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashrath Singh — Computer Science Student, Software Developer & Full-Stack Engineer. Explore my projects, skills, and achievements.">
+  <title>Dashrath Singh | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="new-header">
+    <div class="logo"><span class="teal-text">D</span>ashrath.</div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active"><span class="teal-text">(</span> Home <span class="teal-text">)</span></a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="assets/docs/Dashrath_Singh_Resume.pdf" download="Dashrath_Singh_Resume.pdf" target="_blank" class="btn-download" id="resumeBtn">Download CV</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero new-hero" id="home">
+    <div class="hero-left">
+      <h2 class="greeting">Hy! I Am</h2>
+      <h1 class="name">Dashrath Singh.</h1>
+      
+      <!-- Dashed Arrow SVG (Decorative) -->
+      <svg class="arrow-svg" width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 130 Q 30 50, 100 80 T 190 20" stroke="#265d50" stroke-width="2" stroke-dasharray="6 6" fill="none" />
+        <path d="M185 10 L195 15 L180 25" stroke="#265d50" stroke-width="2" fill="none" />
+      </svg>
+
+      <div class="social-icons">
+        <a href="https://github.com/DASHRATHSINGH0007" target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/dashrath-singh-499483327" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect width="4" height="12" x="2" y="9"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:dashrathsinghrajpurohit2006@gmail.com" aria-label="Email">
+          <i data-lucide="mail"></i>
+        </a>
+        <a href="tel:+919316357059" aria-label="Phone">
+          <i data-lucide="phone"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-center">
+      <div class="avatar-container">
+        <img src="assets/images/profile.png" alt="Dashrath Singh" class="avatar-img" id="profilePhoto">
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <p class="tagline">I build intelligent systems and turn data into insights, and I love what i do.</p>
+      <div class="review-card">
+        <div class="review-text">
+          <span class="review-count">10+ Projects</span>
+          <span class="stars">★★★★★</span>
+        </div>
+        <div class="review-avatars">
+          <img src="https://i.pravatar.cc/100?img=1" alt="user">
+          <img src="https://i.pravatar.cc/100?img=2" alt="user">
+          <img src="https://i.pravatar.cc/100?img=3" alt="user">
+          <img src="https://i.pravatar.cc/100?img=4" alt="user">
+          <span class="rating-num">4.9</span>
+        </div>
+      </div>
+
+      <div class="hero-role">
+        <span class="role-creative">Software</span><br>
+        <span class="role-designer">Developer.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <h2 class="section-title reveal">About <span>Me</span></h2>
+    <p class="section-subtitle reveal">Get to know who I am and what drives me</p>
+
+    <div class="about-content reveal">
+      <div class="about-text">
+        <p>
+          I am a passionate <strong>Computer Science Engineering</strong> student at Parul University, 
+          dedicated to mastering the art of turning complex data into meaningful insights and building 
+          software that solves real-world problems.
+        </p>
+        <p>
+          My journey spans <strong>Data Analytics, Python Development, Machine Learning,</strong> and 
+          <strong>Web Development</strong>. I thrive on challenging projects — from building AI-powered 
+          healthcare systems to crafting predictive models and interactive web applications.
+        </p>
+        <p>
+          With strong problem-solving and analytical skills, I'm constantly pushing my boundaries to learn, 
+          build, and contribute to the tech community. I believe in writing clean, efficient code and 
+          creating solutions that make a difference.
+        </p>
+        <div style="margin-top: 24px;">
+          <a href="assets/docs/Dashrath_Singh_Resume.pdf" download="Dashrath_Singh_Resume.pdf" target="_blank" class="btn-download" style="display:inline-flex;align-items:center;gap:8px;">
+            <i data-lucide="download" style="width:16px;height:16px;"></i> Download CV
+          </a>
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div class="glass-card stat-card">
+          <span class="stat-number" data-count="4" data-suffix="+">4</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="glass-card stat-card">
+          <span class="stat-number" data-count="12" data-suffix="+">9</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="glass-card stat-card">
+          <span class="stat-number" data-count="3" data-suffix="+">5</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="skills-section">
+    <h2 class="section-title reveal">My <span>Skills</span></h2>
+    <p class="section-subtitle reveal">Specialized competencies and technical toolkits organized across core engineering domains</p>
+
+    <div class="skills-grid">
+      <!-- 01: Programming -->
+      <div class="skill-card glass-card reveal">
+        <div class="card-glow-accent"></div>
+        <div class="skill-card-top">
+          <div class="skill-icon-bubble">
+            <i data-lucide="code-2"></i>
+          </div>
+          <span class="skill-card-num">01</span>
+        </div>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">Programming Languages</h3>
+          <p class="skill-card-desc">
+            Writing clean, maintainable, and efficient code with strong algorithmic logic and object-oriented principles.
+          </p>
+        </div>
+        <div class="skill-tech-pills">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Java</span>
+          <span class="tech-pill">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- 02: Frontend Development -->
+      <div class="skill-card glass-card reveal">
+        <div class="card-glow-accent"></div>
+        <div class="skill-card-top">
+          <div class="skill-icon-bubble">
+            <i data-lucide="layout"></i>
+          </div>
+          <span class="skill-card-num">02</span>
+        </div>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">Frontend Development</h3>
+          <p class="skill-card-desc">
+            Building intuitive, responsive, and cross-browser user interfaces with modern layouts and fluid interactivity.
+          </p>
+        </div>
+        <div class="skill-tech-pills">
+          <span class="tech-pill">HTML5</span>
+          <span class="tech-pill">CSS3</span>
+          <span class="tech-pill">JavaScript (ES6+)</span>
+          <span class="tech-pill">Responsive Design</span>
+        </div>
+      </div>
+
+      <!-- 03: Backend Development -->
+      <div class="skill-card glass-card reveal">
+        <div class="card-glow-accent"></div>
+        <div class="skill-card-top">
+          <div class="skill-icon-bubble">
+            <i data-lucide="server"></i>
+          </div>
+          <span class="skill-card-num">03</span>
+        </div>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">Backend Development</h3>
+          <p class="skill-card-desc">
+            Architecting robust server applications, secure authentication, MVC business logic, and scalable REST APIs.
+          </p>
+        </div>
+        <div class="skill-tech-pills">
+          <span class="tech-pill">Flask</span>
+          <span class="tech-pill">RESTful APIs</span>
+          <span class="tech-pill">FastAPI</span>
+        </div>
+      </div>
+
+      <!-- 04: Database Management -->
+      <div class="skill-card glass-card reveal">
+        <div class="card-glow-accent"></div>
+        <div class="skill-card-top">
+          <div class="skill-icon-bubble">
+            <i data-lucide="database"></i>
+          </div>
+          <span class="skill-card-num">04</span>
+        </div>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">Database Management</h3>
+          <p class="skill-card-desc">
+            Structuring relational databases, optimizing complex joins, designing indexes, and ensuring ACID safety.
+          </p>
+        </div>
+        <div class="skill-tech-pills">
+          <span class="tech-pill">SQL</span>
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">MySQL</span>
+        </div>
+      </div>
+
+      <!-- 05: Data Analytics -->
+      <div class="skill-card glass-card reveal">
+        <div class="card-glow-accent"></div>
+        <div class="skill-card-top">
+          <div class="skill-icon-bubble">
+            <i data-lucide="bar-chart-3"></i>
+          </div>
+          <span class="skill-card-num">05</span>
+        </div>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">Data Analytics</h3>
+          <p class="skill-card-desc">
+            Transforming unstructured datasets into actionable business intelligence through EDA and dynamic telemetry.
+          </p>
+        </div>
+        <div class="skill-tech-pills">
+          <span class="tech-pill">Pandas</span>
+          <span class="tech-pill">NumPy</span>
+          <span class="tech-pill">Power BI</span>
+          <span class="tech-pill">Excel &amp; DAX</span>
+        </div>
+      </div>
+
+      <!-- 06: Version Control -->
+      <div class="skill-card glass-card reveal">
+        <div class="card-glow-accent"></div>
+        <div class="skill-card-top">
+          <div class="skill-icon-bubble">
+            <i data-lucide="git-branch"></i>
+          </div>
+          <span class="skill-card-num">06</span>
+        </div>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">Version Control</h3>
+          <p class="skill-card-desc">
+            Managing distributed codebases with clean commit histories, feature branches, pull requests, and CI/CD basics.
+          </p>
+        </div>
+        <div class="skill-tech-pills">
+          <span class="tech-pill">GitHub</span>
+          <span class="tech-pill">Branching</span>
+          <span class="tech-pill">Collaboration</span>
+        </div>
+      </div>
+
+      <!-- 07: Development Tools -->
+      <div class="skill-card glass-card reveal">
+        <div class="card-glow-accent"></div>
+        <div class="skill-card-top">
+          <div class="skill-icon-bubble">
+            <i data-lucide="wrench"></i>
+          </div>
+          <span class="skill-card-num">07</span>
+        </div>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">Development Tools</h3>
+          <p class="skill-card-desc">
+            Utilizing modern developer toolchains for interactive experimentation, API debugging, and terminal automation.
+          </p>
+        </div>
+        <div class="skill-tech-pills">
+          <span class="tech-pill">VS Code</span>
+          <span class="tech-pill">Jupyter Notebook</span>
+          <span class="tech-pill">Postman</span>
+          <span class="tech-pill">Terminal / CLI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOTABLE PROJECTS SHOWCASE ===== -->
+  <section id="projects" class="notable-projects-section">
+    <div class="notable-container">
+
+      <!-- Section Title & Fast Jump Nav -->
+      <div class="notable-header-bar">
+        <div class="notable-header-left">
+          <div class="notable-badge-pill">Notable Projects</div>
+          <h2 class="notable-section-heading">Featured Engineering &amp; Analytics Case Studies</h2>
+        </div>
+        <div class="project-quick-nav">
+          <a href="#project-uber" class="quick-nav-pill">01 Uber NYC</a>
+          <a href="#project-sales" class="quick-nav-pill">02 Sales Forecast</a>
+          <a href="#project-chatbot" class="quick-nav-pill">03 NLP Chatbot</a>
+          <a href="#project-ecommerce" class="quick-nav-pill">04 Sweet Ordering</a>
+          <a href="#project-hospital" class="quick-nav-pill">05 Hospital System</a>
+        </div>
+      </div>
+
+      <!-- ALL PROJECTS RENDERED SEQUENTIALLY IN THIS EXACT FORMAT -->
+      <div class="notable-cards-wrapper all-cards-visible">
+
+        <!-- ================= PROJECT 01: UBER PRICING NYC ================= -->
+        <article class="notable-project-card" id="project-uber">
+          <div class="card-top-badge">
+            <div class="notable-badge-pill">Notable Projects</div>
+          </div>
+
+          <div class="project-header-row">
+            <span class="project-huge-num">01</span>
+            <h2 class="project-main-title">UBER PRICING OPTIMIZATION<br></h2>
+          </div>
+
+          <div class="project-visual-frame">
+            <img src="assets/images/uber_showcase_banner.png" alt="Uber Pricing Optimization NYC Dashboard" class="project-visual-img">
+            <div class="visual-hover-overlay">
+              <button class="preview-btn" onclick="openDeckModal('uber')">
+                <i data-lucide="maximize-2" style="width:16px;height:16px;"></i> Expand Visual Deck
+              </button>
+            </div>
+          </div>
+
+          <div class="project-bottom-split">
+            <div class="project-narrative-col">
+              <p class="project-description-text">
+                An end-to-end analysis about <span class="hl-gold">finding out the best pricing model</span> for uber booking in New York City <span class="hl-gold">to increase the revenue</span> by doing <span class="hl-gold">Linear Regression</span> to find out the impact of each variables of uber booking, evaluate the existing pricing model (High Fare and Discounted Fare application), do impact analysis and give recommendation of the best uber booking pricing. This analysis <span class="hl-gold">resulting a better model of Uber Pricing</span> that is proven to <span class="hl-gold">increase 11.5% revenue</span>.
+              </p>
+              <div class="project-spec-lines">
+                <div class="spec-line"><span class="spec-label">Tools :</span> Python (Google Collab), Tableau</div>
+                <div class="spec-line"><span class="spec-label">Analysis :</span> EDA, Linear Regression</div>
+              </div>
+            </div>
+
+            <div class="project-buttons-col">
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDeckModal('uber')">Full Deck</a>
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDashboardModal('uber')">Tableau Dashboard</a>
+              <a href="https://github.com/DASHRATHSINGH0007" target="_blank" class="action-pill-btn">Google Collab Python Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 02: SALES PREDICTION ================= -->
+        <article class="notable-project-card" id="project-sales">
+          <div class="card-top-badge">
+            <div class="notable-badge-pill">Notable Projects</div>
+          </div>
+
+          <div class="project-header-row">
+            <span class="project-huge-num">02</span>
+            <h2 class="project-main-title">SALES PREDICTION &amp; REVENUE<br>FORECASTING ENGINE</h2>
+          </div>
+
+          <div class="project-visual-frame">
+            <img src="assets/images/sales_showcase_banner.svg" alt="Sales Prediction & Revenue Forecasting Engine" class="project-visual-img">
+            <div class="visual-hover-overlay">
+              <button class="preview-btn" onclick="openDeckModal('sales')">
+                <i data-lucide="maximize-2" style="width:16px;height:16px;"></i> Expand Visual Deck
+              </button>
+            </div>
+          </div>
+
+          <div class="project-bottom-split">
+            <div class="project-narrative-col">
+              <p class="project-description-text">
+                An end-to-end forecasting pipeline engineered to <span class="hl-gold">predict future store revenue</span> and detect seasonal demand shifts using <span class="hl-gold">XGBoost &amp; Time-Series Regression</span>. Evaluated promotional impact and price elasticities across retail branches, enabling data-driven inventory management that <span class="hl-gold">boosted forecasting accuracy by 18.3%</span>.
+              </p>
+              <div class="project-spec-lines">
+                <div class="spec-line"><span class="spec-label">Tools :</span> Python, Scikit-learn, XGBoost, Power BI, Pandas</div>
+                <div class="spec-line"><span class="spec-label">Analysis :</span> Time-Series Forecasting, Feature Engineering, Elasticity Modeling</div>
+              </div>
+            </div>
+
+            <div class="project-buttons-col">
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDeckModal('sales')">Full Deck</a>
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDashboardModal('sales')">Power BI Dashboard</a>
+              <a href="https://github.com/DASHRATHSINGH0007" target="_blank" class="action-pill-btn">Jupyter Python Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 03: AI NLP CHATBOT ================= -->
+        <article class="notable-project-card" id="project-chatbot">
+          <div class="card-top-badge">
+            <div class="notable-badge-pill">Notable Projects</div>
+          </div>
+
+          <div class="project-header-row">
+            <span class="project-huge-num">03</span>
+            <h2 class="project-main-title">INTELLIGENT CONVERSATIONAL<br>NLP CHATBOT ASSISTANT</h2>
+          </div>
+
+          <div class="project-visual-frame">
+            <img src="assets/images/chatbot_showcase_banner.svg" alt="Intelligent Conversational NLP Chatbot Assistant" class="project-visual-img">
+            <div class="visual-hover-overlay">
+              <button class="preview-btn" onclick="openDeckModal('chatbot')">
+                <i data-lucide="maximize-2" style="width:16px;height:16px;"></i> Expand Visual Deck
+              </button>
+            </div>
+          </div>
+
+          <div class="project-bottom-split">
+            <div class="project-narrative-col">
+              <p class="project-description-text">
+                An automated conversational engine engineered with <span class="hl-gold">NLP intent recognition</span> and entity extraction algorithms to <span class="hl-gold">resolve customer queries in real-time</span>. Implemented semantic query matching and dialog state management that successfully <span class="hl-gold">automated 70%+ of frequent user inquiries</span> with sub-second response latency.
+              </p>
+              <div class="project-spec-lines">
+                <div class="spec-line"><span class="spec-label">Tools :</span> Python, NLTK, Spacy, Flask REST API, SQLite</div>
+                <div class="spec-line"><span class="spec-label">Analysis :</span> Intent Classification, Sentiment Analysis, Text Tokenization</div>
+              </div>
+            </div>
+
+            <div class="project-buttons-col">
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDeckModal('chatbot')">Full Deck</a>
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDashboardModal('chatbot')">Interactive Chat Demo</a>
+              <a href="https://github.com/DASHRATHSINGH0007" target="_blank" class="action-pill-btn">GitHub Python Source</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 04: FULL-STACK E-COMMERCE ================= -->
+        <article class="notable-project-card" id="project-ecommerce">
+          <div class="card-top-badge">
+            <div class="notable-badge-pill">Notable Projects</div>
+          </div>
+
+          <div class="project-header-row">
+            <span class="project-huge-num">04</span>
+            <h2 class="project-main-title">FULL-STACK SWEET ORDERING &amp;<br>INVENTORY MANAGEMENT SYSTEM</h2>
+          </div>
+
+          <div class="project-visual-frame">
+            <img src="assets/images/ecommerce_showcase_banner.svg" alt="Full-Stack Sweet Ordering &amp; Inventory Management System" class="project-visual-img">
+            <div class="visual-hover-overlay">
+              <button class="preview-btn" onclick="openDeckModal('ecommerce')">
+                <i data-lucide="maximize-2" style="width:16px;height:16px;"></i> Expand Visual Deck
+              </button>
+            </div>
+          </div>
+
+          <div class="project-bottom-split">
+            <div class="project-narrative-col">
+              <p class="project-description-text">
+                An end-to-end confectionery e-commerce platform built with <span class="hl-gold">Django full-stack architecture</span> featuring sweet cataloging, dynamic cart management, and <span class="hl-gold">real-time inventory tracking</span>. Designed intuitive checkout workflows that <span class="hl-gold">cut order processing time by 35%</span> and handled live sweet custom orders seamlessly.
+              </p>
+              <div class="project-spec-lines">
+                <div class="spec-line"><span class="spec-label">Tools :</span> Django, Python, JavaScript, HTML5/CSS3, SQLite</div>
+                <div class="spec-line"><span class="spec-label">Analysis :</span> Full-Stack Architecture, Query Optimization, Checkout UX</div>
+              </div>
+            </div>
+
+            <div class="project-buttons-col">
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDeckModal('ecommerce')">Full Deck</a>
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDashboardModal('ecommerce')">Live Store Demo</a>
+              <a href="https://github.com/DASHRATHSINGH0007" target="_blank" class="action-pill-btn">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 05: HOSPITAL MANAGEMENT SYSTEM ================= -->
+        <article class="notable-project-card" id="project-hospital">
+          <div class="card-top-badge">
+            <div class="notable-badge-pill">Notable Projects</div>
+          </div>
+
+          <div class="project-header-row">
+            <span class="project-huge-num">05</span>
+            <h2 class="project-main-title">HOSPITAL MANAGEMENT &amp;<br>PATIENT RECORDS SYSTEM</h2>
+          </div>
+
+          <div class="project-visual-frame">
+            <img src="assets/images/hospital_showcase_banner.svg" alt="Hospital Management & Patient Records System" class="project-visual-img">
+            <div class="visual-hover-overlay">
+              <button class="preview-btn" onclick="openDeckModal('hospital')">
+                <i data-lucide="maximize-2" style="width:16px;height:16px;"></i> Expand Visual Deck
+              </button>
+            </div>
+          </div>
+
+          <div class="project-bottom-split">
+            <div class="project-narrative-col">
+              <p class="project-description-text">
+                A comprehensive clinical healthcare ERP engineered to <span class="hl-gold">digitize hospital workflows</span>, inpatient admissions, and electronic health records (EHR). Features role-based access control for medical consultants, automated bed allotment tracking, and <span class="hl-gold">integrated billing &amp; pharmacy management</span> that <span class="hl-gold">reduced patient waiting times by 38%</span> and eliminated record redundancy.
+              </p>
+              <div class="project-spec-lines">
+                <div class="spec-line"><span class="spec-label">Tools :</span> Python, Django / Flask, MySQL, HTML5/CSS3, JavaScript</div>
+                <div class="spec-line"><span class="spec-label">Analysis :</span> Database Normalization, Role-Based Access Control (RBAC), Workflow Automation</div>
+              </div>
+            </div>
+
+            <div class="project-buttons-col">
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDeckModal('hospital')">Full Deck</a>
+              <a href="javascript:void(0)" class="action-pill-btn" onclick="openDashboardModal('hospital')">Hospital Portal Demo</a>
+              <a href="https://github.com/DASHRATHSINGH0007" target="_blank" class="action-pill-btn">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+    <!-- ===== FULL DECK & DASHBOARD PREVIEW MODAL ===== -->
+    <div class="notable-modal" id="notableModal">
+      <div class="notable-modal-overlay" onclick="closeNotableModal()"></div>
+      <div class="notable-modal-dialog">
+        <div class="notable-modal-header">
+          <h3 id="modalTitle">Project Presentation Deck</h3>
+          <button class="modal-close-btn" onclick="closeNotableModal()">&times;</button>
+        </div>
+        <div class="notable-modal-body" id="modalBody">
+          <!-- Dynamic content inserted by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <h2 class="section-title reveal">My <span>Education</span></h2>
+    <p class="section-subtitle reveal">Academic journey and qualifications</p>
+
+    <div class="timeline">
+      <div class="glass-card timeline-item reveal">
+        <h3>B.Tech — Computer Science Engineering</h3>
+        <div class="timeline-date">2023 — Present</div>
+        <p>Parul University, Gujarat. Currently pursuing Bachelor of Technology in Computer Science Engineering with focus on Data Science, AI/ML, and Software Development.</p>
+      </div>
+      <div class="glass-card timeline-item reveal">
+        <h3>Diploma in Native Mobile Application Development</h3>
+        <div class="timeline-date">07/2025 — 09/2026 | CGPA: 8.55 / 10</div>
+        <p>Parul University, Gujarat. Specialized program focusing on native mobile application engineering, mobile architecture, responsive UI, and device performance optimization.</p>
+      </div>
+      <div class="glass-card timeline-item reveal">
+        <h3>12th Standard — Science Stream</h3>
+        <div class="timeline-date">2022 | 72.80%</div>
+        <p>Apex Senior Secondary School. Completed Higher Secondary with Physics, Chemistry, and Mathematics. Built foundational analytical and problem-solving skills.</p>
+      </div>
+      <div class="glass-card timeline-item reveal">
+        <h3>10th Standard</h3>
+        <div class="timeline-date">2021 | 88.50%</div>
+        <p>Balaji Bal Niketan School. Achieved excellent academic results demonstrating strong fundamentals in science and mathematics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements">
+    <h2 class="section-title reveal">My <span>Achievements</span></h2>
+    <p class="section-subtitle reveal">Milestones and recognitions along the way</p>
+
+    <div class="achievements-grid">
+      <div class="glass-card achievement-card reveal">
+        <span class="achievement-icon">🏆</span>
+        <h3>Coding Challenges</h3>
+        <p>Actively participated in competitive programming and coding challenges, solving 500+ problems across platforms to sharpen algorithmic thinking and DSA skills.</p>
+      </div>
+      <div class="glass-card achievement-card reveal">
+        <span class="achievement-icon">📊</span>
+        <h3>Data Analytics Projects</h3>
+        <p>Successfully completed multiple end-to-end data analytics projects involving data cleaning, EDA, visualization, and predictive modeling using Python and Power BI.</p>
+      </div>
+      <div class="glass-card achievement-card reveal">
+        <span class="achievement-icon">🎓</span>
+        <h3>Technical Certifications</h3>
+        <p>Earned certifications in Python Programming, Data Analytics, and Machine Learning from recognized platforms, validating technical expertise and continuous learning.</p>
+      </div>
+      <div class="glass-card achievement-card reveal">
+        <span class="achievement-icon">🚀</span>
+        <h3>AI Healthcare System</h3>
+        <p>Developed MedIntel — an AI-powered healthcare intelligence system demonstrating real-world application of ML, OCR, and full-stack development skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <h2 class="section-title reveal">Contact <span>Me</span></h2>
+    <p class="section-subtitle reveal">Let's connect and build something great together</p>
+
+    <div class="contact-wrapper">
+      <div class="contact-info reveal">
+        <div class="glass-card contact-card">
+          <div class="contact-icon">📧</div>
+          <div class="contact-detail">
+            <h4>Email</h4>
+            <a href="mailto:dashrathsinghrajpurohit2006@gmail.com">dashrathsinghrajpurohit2006@gmail.com</a>
+          </div>
+        </div>
+        <div class="glass-card contact-card">
+          <div class="contact-icon">📱</div>
+          <div class="contact-detail">
+            <h4>Phone</h4>
+            <a href="tel:+919316357059">+91 9316357059</a>
+          </div>
+        </div>
+        <div class="glass-card contact-card">
+          <div class="contact-icon">💼</div>
+          <div class="contact-detail">
+            <h4>LinkedIn</h4>
+            <a href="https://linkedin.com/in/dashrath-singh-499483327" target="_blank">linkedin.com/in/dashrath-singh</a>
+          </div>
+        </div>
+        <div class="glass-card contact-card">
+          <div class="contact-icon">🐙</div>
+          <div class="contact-detail">
+            <h4>GitHub</h4>
+            <a href="https://github.com/DASHRATHSINGH0007" target="_blank">github.com/DASHRATHSINGH0007</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card contact-form reveal">
+        <form id="contactForm">
+          <!-- Web3Forms Access Key: Get free key in 10s at https://web3forms.com -->
+          <input type="hidden" name="access_key" id="web3FormsKey" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="from_name" value="Portfolio Visitor">
+          <input type="checkbox" name="botcheck" style="display: none;">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="contactSubmitBtn" style="width:100%;justify-content:center;">
+            <i data-lucide="send" style="width:18px;height:18px;"></i> Send Message
+          </button>
+          <div id="formStatusMsg" style="margin-top:14px;text-align:center;font-size:14px;display:none;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo">Dashrath.</div>
+      <div class="footer-socials">
+        <a href="https://github.com/DASHRATHSINGH0007" target="_blank" class="social-link" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/dashrath-singh-499483327" target="_blank" class="social-link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect width="4" height="12" x="2" y="9"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:dashrathsinghrajpurohit2006@gmail.com" class="social-link" aria-label="Email">
+          <i data-lucide="mail" style="width:20px;height:20px;"></i>
+        </a>
+        <a href="tel:+919316357059" class="social-link" aria-label="Phone">
+          <i data-lucide="phone" style="width:20px;height:20px;"></i>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Dashrath Singh. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

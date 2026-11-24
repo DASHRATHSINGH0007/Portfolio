@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 290" width="1024" height="290">
+  <defs>
+    <linearGradient id="hospBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1e28"/>
+      <stop offset="100%" stop-color="#061017"/>
+    </linearGradient>
+    <linearGradient id="hospAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="290" fill="url(#hospBgGrad)"/>
+  <rect x="0" y="0" width="1024" height="290" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+  <!-- LEFT SPLIT: Product Cover Mockup (Width: 480) -->
+  <g transform="translate(15, 15)">
+    <rect width="470" height="260" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    
+    <!-- Top graphic banner -->
+    <rect x="15" y="15" width="230" height="150" rx="8" fill="url(#hospAccentGrad)"/>
+    
+    <text x="30" y="52" fill="#ffffff" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="18" letter-spacing="0.5">CAREPLUS HMS</text>
+    <text x="30" y="74" fill="#99f6e4" font-family="'Outfit', 'Inter', sans-serif" font-weight="700" font-size="13">HOSPITAL MANAGEMENT ERP</text>
+    
+    <line x1="30" y1="90" x2="215" y2="90" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    
+    <text x="30" y="112" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="600">Electronic Health Records &amp; Beds</text>
+    <text x="30" y="128" fill="#ccfbf1" font-family="sans-serif" font-size="9">OPD/IPD, Doctor Scheduling &amp; Billing</text>
+    <text x="30" y="150" fill="#facc15" font-family="sans-serif" font-size="9" font-weight="700">PORTFOLIO CASE STUDY | DASHRATH SINGH</text>
+
+    <!-- Clinic / Patient Card on Right of Left Split -->
+    <g transform="translate(265, 15)">
+      <rect width="190" height="230" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+      <rect x="8" y="10" width="174" height="210" rx="8" fill="#090d16"/>
+      <!-- Header -->
+      <circle cx="24" cy="26" r="6" fill="#0d9488"/>
+      <text x="36" y="30" fill="#14b8a6" font-family="sans-serif" font-size="11" font-weight="bold">Patient EHR Portal</text>
+      <!-- Patient Card -->
+      <rect x="15" y="44" width="154" height="60" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="25" y="60" fill="#ffffff" font-size="10" font-weight="bold">Patient: John Doe (ID: 8042)</text>
+      <text x="25" y="75" fill="#94a3b8" font-size="8">Ward: ICU-B | Bed: 14</text>
+      <text x="25" y="90" fill="#22c55e" font-size="8" font-weight="bold">Status: Vitals Stable (BP 120/80)</text>
+
+      <!-- Doctor assign -->
+      <rect x="15" y="112" width="154" height="48" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="25" y="128" fill="#94a3b8" font-size="8">Attending Consultant:</text>
+      <text x="25" y="142" fill="#38bdf8" font-size="9" font-weight="bold">Dr. D. Singh (MD Cardiology)</text>
+
+      <rect x="15" y="172" width="154" height="28" rx="4" fill="#0d9488"/>
+      <text x="45" y="190" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold">Manage Inpatient EHR</text>
+    </g>
+
+    <text x="30" y="200" fill="#94a3b8" font-family="sans-serif" font-size="11">Python, Django, MySQL &amp; RBAC</text>
+    <text x="30" y="222" fill="#2dd4bf" font-family="sans-serif" font-size="12" font-weight="bold">38% Lower Waiting Times</text>
+  </g>
+
+  <!-- VERTICAL DIVIDER -->
+  <line x1="505" y1="15" x2="505" y2="275" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+
+  <!-- RIGHT SPLIT: Hospital Admin & Clinical Operations Dashboard (Width: 500) -->
+  <g transform="translate(520, 15)">
+    <!-- Dashboard Header -->
+    <rect width="489" height="38" rx="6" fill="#111827" stroke="#1f2937" stroke-width="1"/>
+    <circle cx="20" cy="19" r="6" fill="#0d9488"/>
+    <text x="35" y="24" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="800" font-size="13">CAREPLUS HMS</text>
+    <text x="145" y="24" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="600">CLINICAL OPERATIONS TELEMETRY</text>
+    <rect x="390" y="8" width="85" height="22" rx="4" fill="#0f766e"/>
+    <text x="402" y="23" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold">ACTIVE 24/7</text>
+
+    <!-- 4 KPI CARDS -->
+    <g transform="translate(0, 48)">
+      <rect x="0" y="0" width="116" height="60" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="12" y="18" fill="#94a3b8" font-size="9" font-family="sans-serif">TOTAL ADMISSIONS</text>
+      <text x="12" y="44" fill="#14b8a6" font-size="18" font-weight="800" font-family="sans-serif">3,420+</text>
+      
+      <rect x="124" y="0" width="116" height="60" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="136" y="18" fill="#94a3b8" font-size="9" font-family="sans-serif">BED OCCUPANCY</text>
+      <text x="136" y="44" fill="#38bdf8" font-size="18" font-weight="800" font-family="sans-serif">86.4%</text>
+
+      <rect x="248" y="0" width="116" height="60" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="260" y="18" fill="#94a3b8" font-size="9" font-family="sans-serif">WAIT TIME DROP</text>
+      <text x="260" y="44" fill="#4ade80" font-size="18" font-weight="800" font-family="sans-serif">-38.0%</text>
+
+      <rect x="372" y="0" width="117" height="60" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="384" y="18" fill="#94a3b8" font-size="9" font-family="sans-serif">DOCTORS ON CALL</text>
+      <text x="384" y="44" fill="#facc15" font-size="18" font-weight="800" font-family="sans-serif">48</text>
+    </g>
+
+    <!-- CHARTS AREA (Bottom) -->
+    <g transform="translate(0, 118)">
+      <!-- Left Chart: Department Patient Flow -->
+      <rect x="0" y="0" width="245" height="142" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="12" y="18" fill="#cbd5e1" font-size="10" font-weight="700" font-family="sans-serif">PATIENT ADMISSIONS BY WARD</text>
+      
+      <text x="12" y="42" fill="#94a3b8" font-size="9">Emergency / Trauma</text>
+      <rect x="110" y="32" width="120" height="10" rx="3" fill="#1e293b"/>
+      <rect x="110" y="32" width="108" height="10" rx="3" fill="#f43f5e"/>
+
+      <text x="12" y="66" fill="#94a3b8" font-size="9">Cardiology</text>
+      <rect x="110" y="56" width="120" height="10" rx="3" fill="#1e293b"/>
+      <rect x="110" y="56" width="94" height="10" rx="3" fill="#0d9488"/>
+
+      <text x="12" y="90" fill="#94a3b8" font-size="9">General OPD</text>
+      <rect x="110" y="80" width="120" height="10" rx="3" fill="#1e293b"/>
+      <rect x="110" y="80" width="116" height="10" rx="3" fill="#38bdf8"/>
+
+      <text x="12" y="114" fill="#94a3b8" font-size="9">Pediatrics</text>
+      <rect x="110" y="104" width="120" height="10" rx="3" fill="#1e293b"/>
+      <rect x="110" y="104" width="70" height="10" rx="3" fill="#facc15"/>
+
+      <!-- Right Chart: Daily Admissions & Discharge Trend -->
+      <rect x="255" y="0" width="234" height="142" rx="6" fill="#131c31" stroke="#1e293b"/>
+      <text x="267" y="18" fill="#cbd5e1" font-size="10" font-weight="700" font-family="sans-serif">ADMISSION VS DISCHARGE</text>
+      <line x1="267" y1="40" x2="475" y2="40" stroke="#1e293b" stroke-width="1"/>
+      <line x1="267" y1="80" x2="475" y2="80" stroke="#1e293b" stroke-width="1"/>
+      <line x1="267" y1="120" x2="475" y2="120" stroke="#1e293b" stroke-width="1"/>
+      
+      <!-- Admissions Curve -->
+      <polyline points="270,105 300,90 335,95 370,65 405,70 440,45 470,50" fill="none" stroke="#0d9488" stroke-width="2.5"/>
+      <circle cx="470" cy="50" r="4" fill="#2dd4bf"/>
+
+      <!-- Discharge Curve -->
+      <polyline points="270,115 300,105 335,110 370,85 405,80 440,65 470,60" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="3 3"/>
+
+      <text x="267" y="134" fill="#0d9488" font-size="8">● Admissions: 94/day</text>
+      <text x="380" y="134" fill="#94a3b8" font-size="8">-- Discharges: 82/day</text>
+    </g>
+  </g>
+</svg>
